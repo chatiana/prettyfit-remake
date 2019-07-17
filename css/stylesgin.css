@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400, 500, 700');
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.body{
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color:#505962;
+    background-color: #8F28FF;
+}
+/*navigation*/
+.navbar-brand{
+    background-color:#8F28FF;
+
+}
+@media screen and (min-width: 1038px) {
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0;
+      height: 70px;
+      align-items: center;
+  }
+  .main-nav {
+      display: flex;
+      margin-right: 30px;
+      flex-direction: row;
+      justify-content: flex-end;
+  }
+  .main-nav li {
+      margin: 0;
+  }
+
+  .logo {
+      margin-top: 0;
+  }
+  .navbar-toggle {
+      display: none;
+  }
+  .logo:hover, .nav-links:hover {
+      color: rgba(255, 255, 255, 1);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navbar {
+      height: 130px;
+  }
+  .navbar .logo {
+      padding-top: 5px;
+    }
+}
+
+
+/* REGISTER CSS*/
+.card{
+  background:linear-gradient(rgb(143, 40, 255), rgb(193, 4, 231));
+  background-size: cover;
+  padding: 0;
+  margin:0;
+  display: flex;
+  justify-content: center;
+  height: 1000px;
+}
+  .card-body{
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    width: 40%;
+    text-align: center;
+    background-color: #fff;
+    height: 100%;
+    margin-top:100px;
+    margin-bottom:1000px;
+  }
+  .card-body h1{
+    text-align: center;
+  }
+  
+  label{
+    text-align: left;
+    padding-top:10px;
+    text-align: center;
+    width:40%;
+  }
+  .form-signin {
+    width: 100%;
+  }
+  .form-signin .form-btn {
+    border-radius: 10px;
+    letter-spacing: .1rem;
+    width: 50%;
+    transition: all 0.2s;
+    background-color:#402cf7;
+    color:#fff;
+    padding:10px;
+    cursor: pointer;
+    font-size: 15pt;
+    box-shadow:2px 2px 5px rgb(102, 101, 101);
+    text-align: center;
+  }
+  .form-btn{
+    align-content: center;
+  }
+  .form-btn:hover{
+    background: #1e8148;
+    border-color: #fff;
+    color: #fff;
+  }
+  
+  .form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .form-label-group input {
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .form-label-group label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: all .1s ease-in-out;
+  }
+  
+  .form-label-group input::-webkit-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input:-ms-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::-ms-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::-moz-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::placeholder {
+    color: transparent;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card-body{
+    width: 80%;
+    }
+    .form-btn{
+      align-content: center;
+      margin: 0;
+      padding:10px;
+    }
+  }
+
+
