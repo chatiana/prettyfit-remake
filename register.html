@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tatiana Carrillo">
+    <meta name="description" content="Pretty Fit - Personal Trainner">
+    <meta name="keywords" content="prettyfit.ie, personaltrainner, coach, fitness,">
+    <title>PrettyFit.ie</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font-awesome -->
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!-- Custom CSS-->
+    <link href="css/restyle.css" rel="stylesheet" type="text/css">
+    <link href="css/stylereg.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom Fonts from Google -->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!--NAV-->
+<nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a href="index.html" class="logo"><img src="images/pf_logosmline.png"></a>
+        <ul class="main-nav" id="js-menu">
+            <li><a href="index.html" class="nav-links point">Home</a> </li>
+            <li><a href="index.html#about" class="nav-links">About</a></li>
+            <li><a href="index.html#servicescards" class="nav-links">Services</a></li>
+            <li><a href="index.html#blog" class="nav-links">Blog</a></li>
+            <li><a href="index.html#contact" class="nav-links">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--members log in-->
+        <div class="card">
+            <div class="card-body">
+                    <h1>Register</h1>
+             <form class="form-signin">
+                      <div class="form-label-group">
+                        <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
+                        <label for="inputUserame">Username</label>
+                      </div>
+        
+                      <div class="form-label-group">
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                        <label for="inputEmail">Email address</label>
+                      </div>
+        
+                      <div class="form-label-group">
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                        <label for="inputPassword">Password</label>
+                      </div>
+                      
+                      <div class="form-label-group">
+                        <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
+                        <label for="inputConfirmPassword">Confirm password</label>
+                      </div>
+        
+                      <button class="form-btn" type="submit">Register</button>
+                      
+                      <p class="bottom-text">
+                      Already registered? <a href="signin.html">Log In Here</a></p>
+                </form>
+            </div>
+        </div>
+<!--Footer social-->
+          <div class="footer">
+              <ul class="social-list">
+                  <li><a href="#"><img src="images/sm_email.png" class="icon"></a></li>       
+                  <li><a href="#"><img src="images/sm_insta.png" class="icon"></a></li>
+                  <li><a href="#"><img src="images/sm_face.png" class="icon"></a></li>
+                  <li><a href="#"><img src="images/sm_twitter.png" class="icon"></a></li>
+              </ul>
+          </div>
+          <script type="text/javascript">
+            let mainNav = document.getElementById('js-menu');
+            let navBarToggle = document.getElementById('js-navbar-toggle');
+        
+            navBarToggle.addEventListener('click', function () {
+            mainNav.classList.toggle('active');
+        });
+            </script>
+</body>
+</html>
